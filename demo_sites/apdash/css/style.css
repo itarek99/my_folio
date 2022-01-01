@@ -1,0 +1,201 @@
+/******************** Colors ********************/
+:root {
+  --color-primary-dark: #4f1bc5;
+  --color-primary-light: #7b17c5;
+}
+
+/******************** Utilities ********************/
+
+.fw-sb {
+  font-weight: 600;
+}
+
+.fw-m {
+  font-weight: 500 !important;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.rounded-4 {
+  border-radius: 1rem;
+}
+
+.lrp {
+  border-radius: 50px 0 0 50px;
+}
+
+.rrp {
+  border-radius: 0 50px 50px 0;
+}
+
+.navbar,
+.download,
+.counter-sec,
+.testimonials,
+.footer,
+.accordion-button:not(.collapsed) {
+  background: linear-gradient(to right,
+      var(--color-primary-dark),
+      var(--color-primary-light));
+}
+
+.home {
+  background-image: url(../img/hero-bottom-shape-2.svg),
+    linear-gradient(to right,
+      var(--color-primary-dark),
+      var(--color-primary-light));
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.card-hover {
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+}
+
+.about {
+  background: url(../img/about-bg-shape.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-items {
+  margin-left: -10px;
+}
+
+.about-item {
+  margin-bottom: 4px;
+}
+
+::marker {
+  color: var(--color-primary-dark);
+  font-size: 1.5rem;
+}
+
+/*************** Screenshot Owl Caroursel Start ***************/
+
+.owl-item {
+  transform: scale(0.85) !important;
+  transition: all 0.3s !important;
+}
+
+.owl-item.center {
+  transform: scale(1) !important;
+  box-shadow: none !important;
+}
+
+.owl-item,
+.owl-item img {
+  border-radius: 40px;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.owl-dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 10px;
+  outline: none;
+  border-radius: 14px;
+  background-color: gray !important;
+  transition: all 0.3s ease;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+  background: #9629e6 !important;
+}
+
+.screenshot-frame {
+  background-image: url(../img/ss/iphone-mask.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 94.5%;
+  width: 26%;
+  top: -10px;
+  left: calc(50% + 0.5px);
+  z-index: 2;
+}
+
+/******************** Screenshot Owl Caroursel End ********************/
+
+.work-icon {
+  font-size: 3rem;
+  height: 120px;
+  width: 120px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff;
+}
+
+.test-img {
+  width: 100px !important;
+}
+
+.testimonials-user {
+  top: -30px;
+}
+
+.address-icon {
+  height: 50px;
+  width: 50px;
+}
+
+.news-btn:hover {
+  color: #4f1bc5;
+}
+
+.social-icon-box {
+  height: 32px;
+  width: 32px;
+  transition: all 0.2s;
+}
+
+.social-icon-box:hover {
+  border-radius: 50%;
+}
+
+.twitter {
+  background-color: #00acee;
+}
+
+.youtube {
+  background-color: #ff0000;
+}
+
+.linkedin {
+  background-color: #0e76a8;
+}
+
+.dribbble {
+  background-color: #ea4c89;
+}
+
+.header a,
+.footer a {
+  opacity: 0.8 !important;
+  transition: all 0.2s;
+}
+
+.header a:hover,
+.footer a:hover {
+  opacity: 1 !important;
+}

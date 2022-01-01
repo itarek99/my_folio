@@ -1,0 +1,113 @@
+.navigation__checkbox {
+    display: none;
+}
+
+.navigation__button {
+    background-color: #fff;
+    height: 4rem;
+    width: 4rem;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    border-radius: 50%;
+    z-index: 2000;
+    box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.2);
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.navigation__background {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 2.5rem;
+    right: 2.5rem;
+    background-image: radial-gradient(#0fb582, #7ed56f);
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+
+.navigation__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    z-index: 1500;
+    opacity: 1;
+    width: 0%;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.navigation__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+}
+
+.navigation__item {
+    margin: 0.5rem;
+}
+
+.navigation__link:link,
+.navigation__link:visited {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: .5rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+    background-size: 230%;
+    transition: all .4s;
+}
+
+.navigation__link:hover,
+.navigation__link:active {
+    background-position: 100%;
+    color: var(--color-primary);
+    transform: translateX(1rem);
+}
+
+.background-scale {
+    transform: scale(100);
+}
+
+.navigation__nav__width {
+    width: 100%;
+    opacity: 1;
+    right: 0;
+}
+
+@media (max-width: 575.98px) {
+
+    .navigation__button {
+
+        height: 4rem;
+        width: 4rem;
+
+        top: 1rem;
+        right: 1rem;
+
+    }
+
+
+    .navigation__background {
+        height: 3rem;
+        width: 3rem;
+
+        top: 1.5rem;
+        right: 1.5rem;
+
+    }
+
+}
