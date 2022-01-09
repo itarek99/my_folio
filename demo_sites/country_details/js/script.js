@@ -16,7 +16,7 @@ const renderCountry = function (data) {
         
         <p class="card-text mb-2"><span class='fw-bold'>Capital:</span> ${capital}</p>
         <p class="card-text mb-2"><span class='fw-bold'>Population:</span> ${(population / 1000000).toFixed(0)}M</p>
-	    <p class="card-text mb-2"><span class='fw-bold'>Area:</span> ${area}</p>
+	    <p class="card-text mb-2"><span class='fw-bold'>Area:</span> ${area} km<sup>2</sup></p>
         <p class="card-text mb-2"><span class='fw-bold'>Language:</span> ${languages[0].name}</p>
         <p class="card-text mb-2 text-capitalize"><span class='fw-bold'>Currency:</span> ${currencies[0].name}</p>
         <p class="card-text mb-2"><span class='fw-bold'>Alpha 3 Code:</span> ${alpha3Code}</p>
@@ -43,7 +43,7 @@ const renderNeighbour = function (data) {
                     <p class="card-text mb-2"><span class='fw-bold'>Population:</span> ${(population / 1000000).toFixed(
                         0
                     )}M</p>
-		            <p class="card-text mb-2"><span class='fw-bold'>Area:</span> ${area}</p>
+		            <p class="card-text mb-2"><span class='fw-bold'>Area:</span> ${area} km<sup>2</sup></p>
                     <p class="card-text mb-2"><span class='fw-bold'>Language:</span> ${languages[0].name}</p>
                     <p class="card-text mb-2 text-capitalize"><span class='fw-bold'>Currency:</span> ${
                         currencies[0].name
