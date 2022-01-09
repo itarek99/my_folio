@@ -161,7 +161,9 @@ h6 {
     background-color: #229ec9;
 }
 
-.social-link {
+.social-link,
+.social-link:active,
+.social-link:visited {
     margin-inline: 0.1rem;
     font-size: 1.1rem;
     display: inline-block;
@@ -174,6 +176,12 @@ h6 {
     align-items: center;
     color: #fff;
     text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.social-link:hover {
+    color: #fff;
+    transform: rotate(360deg);
 }
 
 @media (max-width: 992px) {
