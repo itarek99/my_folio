@@ -55,7 +55,7 @@ h6 {
 }
 
 .home-content {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .hero-image-box {
@@ -100,7 +100,9 @@ h6 {
     color: #fff !important;
 }
 
-.lg-btn {
+.lg-btn,
+.lg-btn:active,
+.lg-btn:visited {
     font-weight: 500;
     text-decoration: none;
     border: 1px solid var(--bs-primary);
@@ -115,7 +117,9 @@ h6 {
     color: #fff !important;
 }
 
-.submit-btn {
+.submit-btn,
+.submit-btn:active,
+.submit-btn:visited {
     background-color: transparent;
     line-height: 1;
     font-weight: 500;
