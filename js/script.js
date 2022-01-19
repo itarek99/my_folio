@@ -46,7 +46,7 @@ sections.forEach((section) => {
     observer.observe(section);
 });
 
-// remove loader after everything load
-window.addEventListener('load', function () {
+// remove loader after content load
+window.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.loader__box').remove();
 });
