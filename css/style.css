@@ -251,3 +251,34 @@ h6 {
         width: 230px;
     }
 }
+
+/***** loading animation *****/
+.loader__box {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    height: 100px;
+    width: 100px;
+    border: 2px solid var(--bs-primary);
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    50% {
+        transform: rotate(180deg);
+        border-radius: 50px;
+    }
+    100% {
+        transform: rotate(180deg);
+        border-radius: 0px;
+    }
+}
