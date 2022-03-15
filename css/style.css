@@ -193,6 +193,21 @@ h6 {
     transform: rotate(360deg);
 }
 
+/* Card Hover Effect */
+
+.card-img-box {
+    height: 260px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    transition: all 7s ease;
+}
+
+.work-card:hover .card-img-top {
+    transform: translateY(calc(-100% + 260px));
+}
+
 @media (max-width: 992px) {
     .home {
         background: #fff;
