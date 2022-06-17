@@ -4,7 +4,7 @@ const uiMin = document.querySelector(".min");
 const uiSec = document.querySelector(".sec");
 
 const countDown = () => {
-  let curretnYear = 2021;
+  let curretnYear = 2022;
   const countDate = new Date(`November 1, ${curretnYear} 00:00:00`).getTime();
   const now = new Date().getTime();
   const gap = countDate - now;
